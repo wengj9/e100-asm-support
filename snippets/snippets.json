@@ -1,0 +1,122 @@
+{
+	"add (with hints)": {
+		"prefix": "add (with hints)",
+		"body": "add ${1:sum} ${2:num1} ${3:num2}",
+		"description": "  mem[sum] = mem[num1] + mem[num2]",
+		"scope": "source.easm"
+	},
+	"and (with hints)": {
+		"prefix": "and (with hints)",
+		"body": "and ${1:result} ${2:num1} ${3:num2}",
+		"description": "  mem[result] = mem[num1] &amp; mem[num2]",
+		"scope": "source.easm"
+	},
+	"be (with hints)": {
+		"prefix": "be (with hints)",
+		"body": "be ${1:goto} ${2:left} ${3:right}",
+		"description": "  Jump to 'goto' if the mem[left] == mem[right].",
+		"scope": "source.easm"
+	},
+	"blt (with hints)": {
+		"prefix": "blt (with hints)",
+		"body": "blt ${1:goto} ${2:left} ${3:right}",
+		"description": "  Jump to 'goto' if the mem[left] < mem[right].",
+		"scope": "source.easm"
+	},
+	"bne (with hints)": {
+		"prefix": "bne (with hints)",
+		"body": "bne ${1:goto} ${2:left} ${3:right}",
+		"description": "  Jump to 'goto' if the mem[left] != mem[right].",
+		"scope": "source.easm"
+	},
+	"call (with hints)": {
+		"prefix": "call (with hints)",
+		"body": "call ${1:function} ${2:return_address}",
+		"description": "  Jump to a function.",
+		"scope": "source.easm"
+	},
+	"cp (with hints)": {
+		"prefix": "cp (with hints)",
+		"body": "cp ${1:dest} ${2:source}",
+		"description": "  mem[dest] = mem[source]",
+		"scope": "source.easm"
+	},
+	"cpfa (with hints)": {
+		"prefix": "cpfa (with hints)",
+		"body": "cpfa ${1:dest} ${2:array_start} ${3:index}",
+		"description": "  mem[dest] = mem[array_start + mem[index]]",
+		"scope": "source.easm"
+	},
+	"cpta (with hints)": {
+		"prefix": "cpta (with hints)",
+		"body": "cpta ${1:source} ${2:array_start} ${3:index}",
+		"description": "  mem[array_start + mem[index]] = mem[source]",
+		"scope": "source.easm"
+	},
+	"data (with hints)": {
+		"prefix": "data (with hints)",
+		"body": ".data ${1:value}",
+		"description": "  Hard code a value into memory.",
+		"scope": "source.easm"
+	},
+	"div (with hints)": {
+		"prefix": "div (with hints)",
+		"body": "div ${1:quotient} ${2:num1} ${3:num2}",
+		"description": "  mem[quotient] = mem[num1] / mem[num2]",
+		"scope": "source.easm"
+	},
+	"halt (with hints)": {
+		"prefix": "halt (with hints)",
+		"body": "halt",
+		"description": "  Stop program execution.",
+		"scope": "source.easm"
+	},
+	"include (with hints)": {
+		"prefix": "include (with hints)",
+		"body": "#include ${1:filename.e}",
+		"description": "  Include an external file.",
+		"scope": "source.easm"
+	},
+	"mult (with hints)": {
+		"prefix": "mult (with hints)",
+		"body": "mult ${1:product} ${2:num1} ${3:num2}",
+		"description": "  mem[product] = mem[num1] / mem[num2]",
+		"scope": "source.easm"
+	},
+	"not (with hints)": {
+		"prefix": "not (with hints)",
+		"body": "not ${1:result} ${2:num}",
+		"description": "  mem[result] = ~mem[num]",
+		"scope": "source.easm"
+	},
+	"or (with hints)": {
+		"prefix": "or (with hints)",
+		"body": "or ${1:result} ${2:num1} ${3:num2}",
+		"description": "  mem[result] = mem[num1] + mem[num2]",
+		"scope": "source.easm"
+	},
+	"ret (with hints)": {
+		"prefix": "ret (with hints)",
+		"body": "ret ${1:return_address}",
+		"description": "  Return from a function.",
+		"scope": "source.easm"
+	},
+	"sl (with hints)": {
+		"prefix": "sl (with hints)",
+		"body": "sl ${1:shifted} ${2:num} ${3:shift_amount}",
+		"description": "  mem[shifted] = mem[num1] << mem[shift_amount]",
+		"scope": "source.easm"
+	},
+	"sr (with hints)": {
+		"prefix": "sr (with hints)",
+		"body": "sr ${1:shifted} ${2:num} ${3:shift_amount}",
+		"description": "  mem[shifted] = mem[num1] >> mem[shift_amount]",
+		"scope": "source.easm"
+	},
+	"sub (with hints)": {
+		"prefix": "sub (with hints)",
+		"body": "sub ${1:difference} ${2:num1} ${3:num2}",
+		"description": "  mem[difference] = mem[num1] - mem[num2]",
+		"scope": "source.easm"
+	}
+}

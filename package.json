@@ -1,0 +1,31 @@
+{
+    "name": "e100-asm-support",
+    "displayName": "E100 Assembly Support",
+    "description": "Syntax Highlighting and more for E100",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "easm",
+            "aliases": ["E100 Assembly", "easm"],
+            "extensions": [".e",".e100",".easm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "easm",
+            "scopeName": "source.easm",
+            "path": "./syntaxes/easm.tmLanguage"
+        }],
+        "snippets": [
+            {
+                "language": "easm",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
