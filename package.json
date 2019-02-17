@@ -26,7 +26,8 @@
                 "id": "easm",
                 "aliases": [
                     "E100 Assembly",
-                    "easm"
+                    "easm",
+                    "e100"
                 ],
                 "extensions": [
                     ".e",
