@@ -1,18 +1,21 @@
 {
     "name": "e100-asm-support",
     "displayName": "E100 Assembly Support",
-    "description": "Syntax Highlighting and more for E100",
+    "description": "Syntax highlighting and more for E100",
     "version": "0.0.1",
     "publisher": "wengj9",
     "engines": {
         "vscode": "^1.31.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
     "author": {
-        "name": "wengj9"
+        "name": "James Weng",
+        "email": "wengj1@bxscience.edu"
     },
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/wengj9/e100-asm-support.git"
@@ -40,14 +43,27 @@
                 "path": "./syntaxes/easm.tmLanguage"
             }
         ],
-        "capabilities": {
-            "definitionProvider": "true"
-        },
         "snippets": [
             {
                 "language": "easm",
                 "path": "./snippets/snippets.json"
             }
         ]
-    }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "@types/node": "^8.10.25",
+        "tslint": "^5.11.0",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.22"
+    },
+    "activationEvents": [
+        "onLanguage:easm"
+    ],
+    "main": "./out/extension"
 }
