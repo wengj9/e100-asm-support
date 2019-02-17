@@ -1,0 +1,5 @@
+# Ignore compiled extenions
+*.vsix
+
+# Ignore package locks
+package-lock.json
