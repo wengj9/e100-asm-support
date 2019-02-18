@@ -6,3 +6,7 @@ This also takes inspiration from an [LC2K addon](https://github.com/mookie1097/l
 ## Installation
 
 Currently, the only way to install the plugin is to clone the repository and run `vsce package` to get an VSIX file and install that manually. I may put this package on the VSCode Marketplace at some point.
+
+## Current Problems
+
+* Extension still doesn't detect comments after the instructions on the line (something to do with TextMate grammars?)

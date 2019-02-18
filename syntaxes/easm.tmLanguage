@@ -16,7 +16,7 @@
 			<key>comment</key>
 			<string>comments (single line)</string>
 			<key>match</key>
-			<string>^\s*//.*\n?$</string> <!-->([^\S\n]+\/\/.*) (for end-of-line comments)<!-->
+			<string>([^\S\n]+\/\/.*)|(^\s*\/\/.*\n?$)</string> <!-->([^\S\n]+\/\/.*) (for end-of-line comments)<!-->
 			<key>name</key>
 			<string>comment.line.double-slash</string>
 		</dict>
