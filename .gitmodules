@@ -1,0 +1,6 @@
+[submodule "base_extensions/lc2k"]
+	path = base_extensions/lc2k
+	url = git@github.com:mookie1097/lc2k.git
+[submodule "base_extensions/SublimeE100Assembly"]
+	path = base_extensions/SublimeE100Assembly
+	url = git@github.com:ahouse101/SublimeE100Assembly.git
