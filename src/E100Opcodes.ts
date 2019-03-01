@@ -141,8 +141,8 @@ export const OPCODES: { [name: string]: E100Opcode } = {
         type: TwoType,
         spec: new MarkdownString().appendCodeblock(`memory[arg2] = IAR+4\nIAR = arg1`),
     },
-    "return": {
-        name: "return",
+    "ret": {
+        name: "ret",
         opcode: "17",
         type: OneType,
         spec: new MarkdownString().appendCodeblock(`IAR = arg1`),
