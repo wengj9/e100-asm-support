@@ -5,7 +5,7 @@ This also takes inspiration from an [LC2K addon](https://github.com/mookie1097/l
 
 ## Installation
 
-Currently, the only way to install the plugin is to clone the repository and run `vsce package` to get an VSIX file and install that manually. I may put this package on the VSCode Marketplace at some point.
+One way to install the plugin is to clone the repository and run `vsce package` to get an VSIX file and install that manually. The extension is also now on the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=wengj9.e100-asm-support), so feel free to download from there too!
 
 ## Current Problems
 
