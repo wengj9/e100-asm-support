@@ -130,8 +130,8 @@ exports.OPCODES = {
         type: exports.TwoType,
         spec: new vscode_1.MarkdownString().appendCodeblock(`memory[arg2] = IAR+4\nIAR = arg1`),
     },
-    "return": {
-        name: "return",
+    "ret": {
+        name: "ret",
         opcode: "17",
         type: exports.OneType,
         spec: new vscode_1.MarkdownString().appendCodeblock(`IAR = arg1`),
